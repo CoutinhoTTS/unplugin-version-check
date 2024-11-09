@@ -1,0 +1,69 @@
+.version-check-dialog[data-v-202411081731048251838] {
+  width: 350px;
+  height: 160px;
+  border: none;
+  border-radius: 10px;
+  box-shadow:
+    0px 16px 48px 16px rgba(0, 0, 0, 0.08),
+    0px 12px 32px rgba(0, 0, 0, 0.12),
+    0px 8px 16px -8px rgba(0, 0, 0, 0.16);
+  box-sizing: border-box;
+  padding: 0;
+  overflow: hidden;
+}
+.version-check-dialog[data-v-202411081731048251838] > div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.version-check-dialog[data-v-202411081731048251838] > .version-dialog-body.tips {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  height: 115px;
+  gap: 15px;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+
+.version-check-dialog[data-v-202411081731048251838] > .version-dialog-body.tips > .version-tips {
+  color: rgba(48, 49, 51, 1);
+  font-size: 1.5em;
+  position: relative;
+}
+
+.version-check-dialog[data-v-202411081731048251838] > .version-dialog-body.tips > .version-tips_close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.version-check-dialog[data-v-202411081731048251838] > .version-dialog-body.tips > .version-tips_describe {
+  color: rgba(144, 147, 153, 1);
+  font-size: 0.5em;
+}
+
+.version-check-dialog[data-v-202411081731048251838] > .version-dialog-footer {
+  box-sizing: border-box;
+  height: 45px;
+  border-top: 1px solid var(--el-color-info-light-9, #f2f2f4);
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  padding: 10px;
+}
+
+.version-check-dialog[data-v-202411081731048251838] > .version-dialog-footer > button {
+  padding: 6px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+  line-height: 1em;
+}
+.version-check-dialog[data-v-202411081731048251838] > .version-dialog-footer > button.version-dialog-button-primary {
+  background: #007fff;
+  border: 1px solid #007fff;
+  color: #ffffff;
+}

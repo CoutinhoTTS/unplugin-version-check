@@ -1,0 +1,4 @@
+packages:
+  - .
+  - playground
+shamefully-hoist: true
