@@ -1,4 +1,4 @@
-import unpluginVersions from 'unplugin-check-version/vite'
+import unpluginVersions from 'unplugin-version-check/vite'
 import { defineConfig } from 'vite'
 
 export default defineConfig(() => {
@@ -12,7 +12,7 @@ export default defineConfig(() => {
       }),
     ],
     build: {
-      outDir: 'vite',
+      outDir: 'dist/vite',
     },
   }
 })

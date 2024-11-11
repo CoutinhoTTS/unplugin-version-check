@@ -1,11 +1,11 @@
 const path = require('node:path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const unpluginVersions = require('unplugin-check-version/rspack')
+const unpluginVersions = require('unplugin-version-check/rspack')
 
 module.exports = {
   entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, 'rspack'),
+    path: path.resolve(__dirname, 'dist/rspack'),
   },
   plugins: [
     new HtmlWebpackPlugin({

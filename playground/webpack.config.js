@@ -1,11 +1,11 @@
 const path = require('node:path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const unpluginVersions = require('unplugin-check-version/webpack')
+const unpluginVersions = require('unplugin-version-check/webpack')
 
 module.exports = {
   entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, 'webpack'),
+    path: path.resolve(__dirname, 'dist/webpack'),
   },
   plugins: [
     new HtmlWebpackPlugin({
