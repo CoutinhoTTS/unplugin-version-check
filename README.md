@@ -13,6 +13,12 @@
 Project version check
 </p>
 
+
+<p align="center">
+  <img src="https://coutinhotts.github.io/assets/unplugin-version-check/dom.jpg" width="600px" />
+</p>
+
+
 ## Why
 When we are using a website and a new version is released, we need to notify the user that a new version of the site is available. Our project might be built with different frameworks and build tools, with common ones including Vite, Webpack, and Repack. We can install a plugin during the build process that supports various build tools, making it easier for the site to detect version updates.
 
