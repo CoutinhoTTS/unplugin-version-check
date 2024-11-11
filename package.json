@@ -1,23 +1,22 @@
 {
   "name": "unplugin-version-check",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "",
   "author": "coutinho",
   "license": "ISC",
-  "homepage": "https://github.com/CoutinhoTTS/unplugin-versions-check#readme",
+  "homepage": "https://github.com/CoutinhoTTS/unplugin-version-check#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CoutinhoTTS/unplugin-versions-check.git"
+    "url": "git+https://github.com/CoutinhoTTS/unplugin-version-check.git"
   },
   "bugs": {
-    "url": "https://github.com/CoutinhoTTS/unplugin-versions-check/issues"
+    "url": "https://github.com/CoutinhoTTS/unplugin-version-check/issues"
   },
   "keywords": [
     "unplugin",
-    "rollup",
     "vite",
-    "esbuild",
+    "rspack",
     "webpack"
   ],
   "exports": {
@@ -38,6 +37,9 @@
       "require": "./dist/rspack.cjs"
     }
   },
+  "files": [
+    "dist"
+  ],
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "scripts": {
