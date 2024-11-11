@@ -82,4 +82,5 @@ interface Position {
 | position|dialog location|Position|--|
 | title|dialog title|string|Discover new version|
 | describe|dialog describe|string|Detected a new version of the system, please update!|
-| describe|dialog button text|string|Update now|
+| btnText|dialog button text|string|Update now|
+| overlay|dialog overlay|boolean|true|
