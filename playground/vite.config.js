@@ -8,7 +8,7 @@ export default defineConfig(() => {
       unpluginVersions({
         base: './',
         time: 30000,
-        overlay: false,
+        // overlay: false,
       }),
     ],
     build: {
