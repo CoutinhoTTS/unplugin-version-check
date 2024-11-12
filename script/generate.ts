@@ -7,5 +7,5 @@ const result = transpileModule(tsCode, {
 })
 fs.writeFileSync(
   './src/core/generate/js.ts',
-  `export default \`${result.outputText}\``,
+  `export default \`${result.outputText}\`\n`,
 )

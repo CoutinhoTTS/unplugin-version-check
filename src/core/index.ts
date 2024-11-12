@@ -9,8 +9,8 @@ export async function core(params: Params) {
   const dir = params?.dir
   if (!dir)
     return
-  const { overlay, position, systemName, time } = params
 
+  const { overlay, position, systemName, time, background } = params
   const version = generateVersion()
   fs.writeFileSync(
     join(dir, 'version'),
@@ -21,6 +21,7 @@ export async function core(params: Params) {
     generateCss(`data-v-${version}`, {
       position,
       overlay,
+      background,
     }),
   )
 

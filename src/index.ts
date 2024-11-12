@@ -7,6 +7,7 @@ import { core } from './core/index'
 
 const unpluginFactory: UnpluginFactory<Params> = (params) => {
   params = Object.assign({ base: './', time: 30000, systemName: 'system' }, params)
+  // const ismode = false
   return {
     name: 'unplugin-version-check',
     buildEnd() {
@@ -21,6 +22,7 @@ const unpluginFactory: UnpluginFactory<Params> = (params) => {
         !params?.dir && (params.dir = resolve(config.root, config.build.outDir))
       },
     },
+
     writeBundle() {
       core(params)
     },

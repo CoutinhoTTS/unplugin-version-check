@@ -4,6 +4,7 @@ export interface Position {
   left?: string | number
   right?: string | number
 }
+export type Background = Record<string, any>
 export interface Params {
   base: string
   time: number
@@ -14,4 +15,5 @@ export interface Params {
   describe?: string
   btnText?: string
   overlay?: boolean
+  background?: Background
 }

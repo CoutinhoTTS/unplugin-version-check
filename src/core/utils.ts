@@ -1,11 +1,13 @@
 import type { DefaultTreeAdapterMap } from 'parse5'
-import type { Position } from './types'
+import type { Background, Position } from './types'
 import jsContent from './generate/js'
 
 type Node = DefaultTreeAdapterMap['node']
 interface CssConfig {
   position?: Position
   overlay?: boolean
+  background?: Background
+
 }
 export function generateVersion() {
   const today = new Date()
@@ -63,6 +65,13 @@ export function generateCss(prop: string, cssConfig: CssConfig) {
     right: cssConfig?.position?.right ?? void 0,
   }
   const overlay = cssConfig?.overlay ?? true
+  const background = cssConfig?.background
+  const backgroundCss: string[] = []
+  if (typeof background === 'object' && Object.keys(background).length) {
+    Object.keys(background).forEach((key) => {
+      backgroundCss.push(`background-${key}:${background[key]}`)
+    })
+  }
   return `
          .version-check-dialog[${prop}] {
             width: 350px;
@@ -93,6 +102,8 @@ export function generateCss(prop: string, cssConfig: CssConfig) {
             position: relative;
             box-sizing: border-box;
             padding: 0 20px;
+            ${backgroundCss.join(';')}
+
         }
 
          .version-check-dialog[${prop}]>.version-dialog-body.tips>.version-tips {
