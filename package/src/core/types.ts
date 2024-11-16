@@ -8,7 +8,7 @@ export type Background = Record<string, any>
 export interface Params {
   base: string
   time: number
-  systemName: string
+  systemName: string | (() => string)
   position?: Position
   dir?: string
   title?: string

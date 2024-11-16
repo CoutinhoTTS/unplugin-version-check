@@ -10,7 +10,15 @@ export async function core(params: Params) {
   if (!dir)
     return
 
-  const { overlay, position, systemName, time, background } = params
+  const { overlay, position, systemName: sn, time, background } = params
+  let systemName
+  if (typeof sn === 'function') {
+    systemName = sn()
+  }
+  else {
+    systemName = sn
+  }
+
   const version = generateVersion()
   fs.writeFileSync(
     join(dir, 'version'),
