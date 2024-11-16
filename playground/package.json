@@ -12,15 +12,15 @@
     "rspack": "rspack --config rspack.config.js",
     "dev": "vite build && webpack --config webpack.config.js && rspack --config rspack.config.js"
   },
-  "dependencies": {
-    "html-webpack-plugin": "^5.6.3",
-    "unplugin-version-check": "workspace:^",
-    "vite": "^5.4.10"
-  },
   "devDependencies": {
     "@rspack/cli": "^1.0.14",
     "@rspack/core": "^1.0.14",
+    "html-webpack-plugin": "^5.6.3",
+    "vite": "^5.4.10",
     "webpack": "^5.96.1",
     "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "unplugin-version-check": "workspace:^"
   }
 }

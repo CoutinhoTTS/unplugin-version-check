@@ -1,68 +1,13 @@
 {
-  "name": "unplugin-version-check",
-  "type": "module",
-  "version": "0.1.03",
-  "description": "",
-  "author": "coutinho",
-  "license": "ISC",
-  "homepage": "https://github.com/CoutinhoTTS/unplugin-version-check#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CoutinhoTTS/unplugin-version-check.git"
-  },
-  "bugs": {
-    "url": "https://github.com/CoutinhoTTS/unplugin-version-check/issues"
-  },
-  "keywords": [
-    "unplugin",
-    "vite",
-    "rspack",
-    "webpack"
-  ],
-  "exports": {
-    ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
-    },
-    "./vite": {
-      "import": "./dist/vite.js",
-      "require": "./dist/vite.cjs"
-    },
-    "./webpack": {
-      "import": "./dist/webpack.js",
-      "require": "./dist/webpack.cjs"
-    },
-    "./rspack": {
-      "import": "./dist/rspack.js",
-      "require": "./dist/rspack.cjs"
-    }
-  },
-  "files": [
-    "dist"
-  ],
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.js",
+  "name": "version-check",
+  "version": "1.0.0",
+  "private": "true",
   "scripts": {
-    "build": "esno script/generate.ts && tsup",
-    "dev": "esno script/generate.ts && tsup --watch",
-    "lint": "eslint ./src",
-    "lint:fix": "eslint --fix ./src"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "fs-extra": "^11.2.0",
-    "magic-string": "^0.30.12",
-    "parse5": "^7.2.1",
-    "unplugin": "^1.15.0"
-  },
-  "devDependencies": {
-    "@antfu/eslint-config": "^3.8.0",
-    "@types/fs-extra": "^11.0.4",
-    "@types/node": "^22.9.0",
-    "eslint": "^9.14.0",
-    "eslint-plugin-format": "^0.1.2",
-    "esno": "^4.8.0",
-    "tsup": "^8.3.5",
-    "typescript": "^5.6.3",
     "vite": "^5.4.10"
   }
 }
