@@ -156,9 +156,10 @@ export function generateCss(prop: string, cssConfig: CssConfig) {
     `
 }
 
-export function generateJs({ systemName, time }: { systemName: string, time: number }) {
+export function generateJs({ systemName, time }: { systemName: string|(()=>string), time: number }) {
+  
   return `
       ${jsContent}
-      window.onload = function () {const check = new _CheckVersion({time:${time},systemName:"${systemName}"});check.startCheck()};
+      window.onload = function () {let systemName=${typeof systemName ==="string"?`"${systemName}"`:systemName};if(typeof systemName ==="function"){systemName=systemName()};const check = new _CheckVersion({time:${time},systemName:systemName});check.startCheck()};
     `
 }
