@@ -4,7 +4,7 @@ import type { Params } from './core/types'
 import { resolve } from 'node:path'
 import { createUnplugin } from 'unplugin'
 import { core } from './core/index'
-
+export * from './core/types'
 const unpluginFactory: UnpluginFactory<Params> = (params) => {
   params = Object.assign({ base: './', time: 30000, systemName: 'system' }, params)
   // const ismode = false
@@ -30,5 +30,4 @@ const unpluginFactory: UnpluginFactory<Params> = (params) => {
 }
 
 const unplugin = createUnplugin(unpluginFactory)
-
 export default unplugin
