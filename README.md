@@ -53,7 +53,7 @@ webpack.config.js
 ``` javascript
 const versionCheck = require('unplugin-check-version/webpack')
 module.exports = {
-    plugins:[versionCheck(/*option*/)]
+    plugins:[versionCheck.default(/*option*/)]
 }
 ```
 
@@ -62,7 +62,7 @@ rspack.config.js
 ``` javascript
 const versionCheck = require('unplugin-check-version/rspack')
 module.exports = {
-    plugins:[versionCheck(/*option*/)]
+    plugins:[versionCheck.default(/*option*/)]
 }
 ```
 
