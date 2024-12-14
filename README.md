@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://coutinhotts.github.io/assets/unplugin-version-check/logo.png" width="600px" />
+  <img src="https://coutinhotts.github.io/assets/unplugin-version-check/logo.png" width="400px" />
 </p>
 
 <h1 align="center">unplugin-version-check</h1>
